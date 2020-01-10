@@ -1,7 +1,7 @@
 {
-    "name": "TM1650",
-    "version": "1.1.0",
-    "description": "makecode TM1650 (Digit Display) package for micro:bit",
+    "name": "创乐博四位数码管",
+    "version": "1.2.0",
+    "description": "用于创乐博micro:bit开发板扩展包",
     "license": "MIT",
     "dependencies": {
         "core": "*"
