@@ -6,7 +6,7 @@
 /**
  * TM1650 digit Display
  */
-//% weight=100 color=#64C800 icon="8" block="TM1650"
+//% weight=100 color=#64C800 icon="8" block="四位数码管"
 namespace TM1650 {
 
     let COMMAND_I2C_ADDRESS = 0x24
@@ -35,7 +35,7 @@ namespace TM1650 {
     /**
      * turn on display
      */
-    //% blockId="TM650_ON" block="turn on display"
+    //% blockId="TM650_ON" block="打开显示"
     //% weight=50 blockGap=8
     export function on() {
         cmd(_intensity * 16 + 1)
@@ -44,7 +44,7 @@ namespace TM1650 {
     /**
      * turn off display
      */
-    //% blockId="TM650_OFF" block="turn off display"
+    //% blockId="TM650_OFF" block="关闭显示"
     //% weight=50 blockGap=8
     export function off() {
         _intensity = 0
@@ -54,7 +54,7 @@ namespace TM1650 {
     /**
      * clear display content
      */
-    //% blockId="TM650_CLEAR" block="clear display"
+    //% blockId="TM650_CLEAR" block="清除显示"
     //% weight=40 blockGap=8
     export function clear() {
         dat(0, 0)
@@ -69,7 +69,7 @@ namespace TM1650 {
      * @param digit is number (0-15) will be shown, eg: 1
      * @param bit is position, eg: 0
      */
-    //% blockId="TM650_DIGIT" block="show digit %num|at %bit"
+    //% blockId="TM650_DIGIT" block="显示数字 %num|在 %bit 位"
     //% weight=80 blockGap=8
     //% num.max=15 num.min=0
     export function digit(num: number, bit: number) {
@@ -81,7 +81,7 @@ namespace TM1650 {
      * show a number in display
      * @param num is number will be shown, eg: 100
      */
-    //% blockId="TM650_SHOW_NUMBER" block="show number %num"
+    //% blockId="TM650_SHOW_NUMBER" block="显示数字 %num"
     //% weight=100 blockGap=8
     export function showNumber(num: number) {
         if (num < 0) {
@@ -99,7 +99,7 @@ namespace TM1650 {
      * show a number in hex format
      * @param num is number will be shown, eg: 123
      */
-    //% blockId="TM650_SHOW_HEX_NUMBER" block="show hex number %num"
+    //% blockId="TM650_SHOW_HEX_NUMBER" block="显示16进制数字 %num"
     //% weight=90 blockGap=8
     export function showHex(num: number) {
         if (num < 0) {
@@ -118,7 +118,7 @@ namespace TM1650 {
      * @param bit is positiion, eg: 0
      * @param show is true/false, eg: true
      */
-    //% blockId="TM650_SHOW_DP" block="show dot point %bit|show %num"
+    //% blockId="TM650_SHOW_DP" block="显示小数点 %bit|是否显示 %num"
     //% weight=80 blockGap=8
     export function showDpAt(bit: number, show: boolean) {
         if (show) dat(bit, dbuf[bit % 4] | 0x80)
@@ -129,7 +129,7 @@ namespace TM1650 {
      * set display intensity
      * @param dat is intensity of the display, eg: 3
      */
-    //% blockId="TM650_INTENSITY" block="set intensity %dat"
+    //% blockId="TM650_INTENSITY" block="设置显示强度 %dat"
     //% weight=70 blockGap=8
     export function setIntensity(dat: number) {
         if ((dat < 0) || (dat > 8))
