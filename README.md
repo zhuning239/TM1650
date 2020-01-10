@@ -48,7 +48,7 @@ https://github.com/zhuning239/TM1650
 - **setIntensity(dat: number)**  
 设置显示强度.  
 
-## 哪里程序
+## 案例程序
 
 ![](https://raw.githubusercontent.com/microbit-makecode-packages/TM1650/master/demo.jpg)
 
