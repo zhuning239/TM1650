@@ -69,7 +69,7 @@ namespace TM1650 {
      * @param digit is number (0-15) will be shown, eg: 1
      * @param bit is position, eg: 0
      */
-    //% blockId="TM650_DIGIT" block="显示数字 %num|在 %bit"
+    //% blockId="TM650_DIGIT" block="显示数字 %num|在 %bit |位"
     //% weight=80 blockGap=8
     //% num.max=15 num.min=0
     export function digit(num: number, bit: number) {
