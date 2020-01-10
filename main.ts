@@ -35,7 +35,7 @@ namespace TM1650 {
     /**
      * turn on display
      */
-    //% blockId="TM650_ON" block="turn on display"
+    //% blockId="TM650_ON" block="打开显示"
     //% weight=50 blockGap=8
     export function on() {
         cmd(_intensity * 16 + 1)
@@ -44,7 +44,7 @@ namespace TM1650 {
     /**
      * turn off display
      */
-    //% blockId="TM650_OFF" block="turn off display"
+    //% blockId="TM650_OFF" block="关闭显示"
     //% weight=50 blockGap=8
     export function off() {
         _intensity = 0
