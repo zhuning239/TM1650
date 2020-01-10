@@ -1,7 +1,6 @@
 /**
- * makecode Four Digit Display (TM1650) Package.
- * From microbit/micropython Chinese community.
- * http://www.micropython.org.cn
+ * makecode四位数显示(TM1650)包.
+ * http://www.loborobot.com
  */
 
 /**
