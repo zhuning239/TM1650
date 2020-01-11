@@ -54,7 +54,7 @@ namespace TM1650 {
     /**
      * clear display content
      */
-    //% blockId="TM650_CLEAR" block="clear display"
+    //% blockId="TM650_CLEAR" block="清空显示"
     //% weight=40 blockGap=8
     export function clear() {
         dat(0, 0)
@@ -69,7 +69,7 @@ namespace TM1650 {
      * @param digit is number (0-15) will be shown, eg: 1
      * @param bit is position, eg: 0
      */
-    //% blockId="TM650_DIGIT" block="show digit %num|at %bit"
+    //% blockId="TM650_DIGIT" block="显示数字 %num|在 %bit"
     //% weight=80 blockGap=8
     //% num.max=15 num.min=0
     export function digit(num: number, bit: number) {
@@ -81,7 +81,7 @@ namespace TM1650 {
      * show a number in display
      * @param num is number will be shown, eg: 100
      */
-    //% blockId="TM650_SHOW_NUMBER" block="show number %num"
+    //% blockId="TM650_SHOW_NUMBER" block="显示数字 %num"
     //% weight=100 blockGap=8
     export function showNumber(num: number) {
         if (num < 0) {
