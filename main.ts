@@ -99,7 +99,7 @@ namespace TM1650 {
      * show a number in hex format
      * @param num is number will be shown, eg: 123
      */
-    //% blockId="TM650_SHOW_HEX_NUMBER" block="show hex number %num"
+    //% blockId="TM650_SHOW_HEX_NUMBER" block="显示16进制数字 %num"
     //% weight=90 blockGap=8
     export function showHex(num: number) {
         if (num < 0) {
@@ -118,7 +118,7 @@ namespace TM1650 {
      * @param bit is positiion, eg: 0
      * @param show is true/false, eg: true
      */
-    //% blockId="TM650_SHOW_DP" block="show dot point %bit|show %num"
+    //% blockId="TM650_SHOW_DP" block="显示小数点 %bit|是否显示 %num"
     //% weight=80 blockGap=8
     export function showDpAt(bit: number, show: boolean) {
         if (show) dat(bit, dbuf[bit % 4] | 0x80)
@@ -129,7 +129,7 @@ namespace TM1650 {
      * set display intensity
      * @param dat is intensity of the display, eg: 3
      */
-    //% blockId="TM650_INTENSITY" block="set intensity %dat"
+    //% blockId="TM650_INTENSITY" block="设置显示强度 %dat"
     //% weight=70 blockGap=8
     export function setIntensity(dat: number) {
         if ((dat < 0) || (dat > 8))
